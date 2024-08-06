@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DogeCoin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between; 
+                position: fixed; 
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color:orange; 
+                padding: 10px 20px; 
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+                z-index: 1000;
+        }
+        .header img {
+                height: 40px; 
+        }
+        .company-name {
+                flex: 1;
+                text-align: center;
+                font-size: 24px; 
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-image img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .product-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .details {
+            flex: 2;
+            margin-right: 20px;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .description {
+            margin: 20px 0;
+        }
+        .buy-now {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+        .buy-now:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <img src="images\menu option.png" alt="Options"> 
+        <a href="HTML.html"><img src="images\Abyss LOGO.jpg"></a>
+        <img src="images\pngwing.com.png" alt="Search">
+    </header>
+
+    <div style="padding-top: 60px;">
+
+    <div class="container">
+        <h1>BitCoin</h1>
+        <div class="product-details">
+            <div class="product-image">
+                <img src="images\Dogecoin_Logo.png" alt="DogeCoin">
+            </div>
+            <div class="details">
+                <div class="price">$0.2</div>
+                <div class="description">
+                    <h2>Product Description</h2>
+                    <pre>                        Dogecoin is a cryptocurrency that originated as a joke but has since gained substantial popularity 
+                        and utility. Created in December 2013 by software engineers Billy Markus and Jackson Palmer, 
+                        Dogecoin is based on the "Doge" meme, featuring a Shiba Inu dog as its mascot. Unlike many 
+                        cryptocurrencies, Dogecoin was designed with a fun and lighthearted approach, and it initially 
+                        gained traction through online communities and social media.
+
+                        Despite its whimsical origins, Dogecoin has evolved into a widely recognized digital asset, known 
+                        for its strong community and charitable efforts. It operates on a proof-of-work blockchain, similar 
+                        to Bitcoin, but with a faster block time and an unlimited supply of coins, distinguishing it from 
+                        Bitcoin’s capped supply.
+                        
+                        Dogecoin’s appeal lies in its active and enthusiastic user base, along with its use in tipping 
+                        content creators and supporting various causes. It has attracted attention from high-profile 
+                        individuals, including Elon Musk, which has further bolstered its visibility and market value. 
+                        While it started as a novelty, Dogecoin’s resilience and community-driven initiatives highlight 
+                        its unique place in the cryptocurrency landscape.</pre>
+                </div>
+                <a href="PaymentPageDogeCoin.html" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

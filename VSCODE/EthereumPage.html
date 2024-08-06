@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between; 
+                position: fixed; 
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color:orange; 
+                padding: 10px 20px; 
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+                z-index: 1000;
+        }
+        .header img {
+                height: 40px; 
+        }
+        .company-name {
+                flex: 1;
+                text-align: center;
+                font-size: 24px; 
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-image img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .product-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .details {
+            flex: 2;
+            margin-right: 20px;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .description {
+            margin: 20px 0;
+        }
+        .buy-now {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+        .buy-now:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <img src="images\menu option.png" alt="Options"> 
+        <a href="HTML.html"><img src="images\Abyss LOGO.jpg"></a>
+        <img src="images\pngwing.com.png" alt="Search">
+    </header>
+
+    <div style="padding-top: 60px;">
+
+    <div class="container">
+        <h1>Ethereum</h1>
+        <div class="product-details">
+            <div class="product-image">
+                <img src="images\ethereum-6278326_1280.webp" alt="Ethereum">
+            </div>
+            <div class="details">
+                <div class="price">$200</div>
+                <div class="description">
+                    <h2>Product Description</h2>
+                    <pre>                        Ethereum is a decentralized, open-source blockchain platform introduced in 2015 by Vitalik Buterin 
+                        and his team. Unlike Bitcoin, which is primarily a digital currency, Ethereum’s primary innovation 
+                        is its support for smart contracts and decentralized applications (dApps). These smart contracts 
+                        are self-executing agreements with the terms directly written into code, allowing for automated and
+                        trustless transactions without intermediaries.
+
+                        Ethereum operates on a blockchain that is similar to Bitcoin’s but is designed to be more versatile. 
+                        The platform's native cryptocurrency, **Ether (ETH)**, is used to pay for transaction fees and 
+                        computational services on the network. Ethereum’s flexibility has fostered the development of a 
+                        wide range of applications, including decentralized finance (DeFi) services, non-fungible 
+                        tokens (NFTs), and decentralized autonomous organizations (DAOs).
+                        
+                        A key feature of Ethereum is its **Turing-complete** programming language, which enables developers 
+                        to create complex and custom applications. The network is currently transitioning from a 
+                        proof-of-work (PoW) consensus mechanism to a proof-of-stake (PoS) model with Ethereum 2.0, aimed at 
+                        improving scalability, security, and energy efficiency.
+                        
+                        Ethereum’s robust ecosystem and ongoing upgrades continue to drive innovation and adoption in the 
+                        blockchain space, establishing it as a foundational technology for the decentralized web.</pre>
+                </div>
+                <a href="PaymentPageEthereum.html" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Payment Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        .result {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cryptocurrency Payment</h1>
+        <div class="form-group">
+            <label for="crypto-amount">Amount in Cryptocurrency:</label>
+            <input type="number" id="crypto-amount" step="0.0001" min="0" required>
+        </div>
+        <div class="form-group">
+            <label for="crypto-currency">Cryptocurrency:</label>
+            <select id="crypto-currency" required>
+                <option value="ethereum">Ethereum</option>
+                <option value="dogecoin">Dogecoin</option>
+                <option value="bitcoin">Bitcoin</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="currency">Convert USD to (optional):</label>
+            <select id="currency">
+                <option value="USD">Leave as USD</option>
+                <option value="EUR">Euro</option>
+                <option value="INR">Rupees</option>
+                <option value="GBP">Pound</option>
+                <option value="KWD">Kuwaiti Dinar</option>
+                <option value="CHF">Swiss Franc</option>
+            </select>
+        </div>
+        <button class="btn" onclick="calculate()">Calculate</button>
+        <div class="result" id="result"></div>
+        <a href="ThankUpage.html"><button class="btn" id="buyButton" style="display:none;">Buy</button></a>
+    </div>
+
+    <script>
+        function calculate() {
+            const cryptoAmount = document.getElementById('crypto-amount').value;
+            const cryptoCurrency = document.getElementById('crypto-currency').value;
+            const currency = document.getElementById('currency').value;
+
+            const cryptoRates = {
+                bitcoin: 30000, 
+                ethereum: 2000, 
+                dogecoin: 0.2, 
+            };
+
+           
+            const conversionRates = {
+                USD: 1,
+                EUR: 0.85,
+                INR: 74,
+                GBP: 0.75,
+                KWD: 0.30,
+                CHF: 0.92
+            };
+
+            if (cryptoAmount && cryptoCurrency) {
+                const usdAmount = cryptoAmount * cryptoRates[cryptoCurrency];
+
+                let convertedAmount = usdAmount;
+                let currencySymbol = "USD";
+                if (currency !== "USD") {
+                    convertedAmount = usdAmount * conversionRates[currency];
+                    currencySymbol = currency;
+                }
+
+                const resultDiv = document.getElementById('result');
+                resultDiv.innerHTML = `
+                    You need to pay ${cryptoAmount} ${cryptoCurrency}, which is equivalent to ${usdAmount.toFixed(2)} USD.<br>
+                    Converted to ${currencySymbol}, you need to pay ${convertedAmount.toFixed(2)} ${currencySymbol}.
+                `;
+
+                document.getElementById('buyButton').style.display = 'block';
+            } else {
+                alert("Please fill out all fields.");
+            }
+        }
+    </script>
+</body>
+</html>

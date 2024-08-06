@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Abyss Webpage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product List</title>
+        <link rel="stylesheet" href="styles.css">
+    
+        <style>
+            .body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+
+            }
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between; 
+                position: fixed; 
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color:orange; 
+                padding: 10px 20px; 
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+                z-index: 1000; 
+            }
+            .header img {
+                height: 40px; 
+            }
+            .company-name {
+                flex: 1;
+                text-align: center;
+                font-size: 24px; 
+            }
+            .product-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px; 
+            max-width: 90%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            .product-image {
+                width: 100%;
+                height: auto;
+            }
+            .product-info {
+                padding: 16px;
+                text-align: center;
+            }
+            .product-name {
+                font-size: 18px;
+                margin: 8px 0;
+            }
+            .product-price {
+            font-size: 16px;
+            color: #28a745;
+            }
+
+            .product-container {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            padding: 10px;
+            gap: 10px;
+            box-sizing: border-box;
+            }
+
+            .product-item {
+            flex: 0 0 auto;
+            width: 200px; 
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+            }
+
+            .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+            }
+
+            .product-item h2 {
+            font-size: 1.2em;
+            margin: 10px 0;
+            }
+
+            .product-item p {
+            font-size: 1em;
+            color: #333;
+            }
+
+            @media (max-width: 600px) {
+                .product-block {
+                    width: 90%;
+                }
+                .product-name {
+                    font-size: 16px;
+                }
+                .product-price {
+                    font-size: 14px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <header class="header">
+            <img src="images\menu option.png" alt="Options"> 
+            <a href="HTML.html"><img src="images\Abyss LOGO.jpg"></a>
+            <a href="searching.html"><img src="images\pngwing.com.png" alt="Search"></a>
+        </header>
+
+        <div style="padding-top: 60px;">
+    <a href="BitCoinPage.html">
+    <div class="product-container">    
+        <div class="product-block">
+            <img src="images\61Iw4aixZ1L.jpg" alt="Buy BitCoin" class="product-image"> 
+                <div class="product-info">
+                    <div class="product-name">BitCoin</div></a>
+                    <div class="product-price">$3000</div>
+            </div>
+        </div>
+    <a href = "DogeCoinPage.html">    
+        <div class="product-block">
+            <img src="images\Dogecoin_Logo.png" style="height: 2000;" alt="Buy DogeCoin" class="product-image"> 
+                <div class="product-info">
+                    <div class="product-name">DogeCoin</div></a>
+                    <div class="product-price">$0.2</div>
+            </div>
+        </div>
+    <a href = "EthereumPage.html">
+        <div class="product-block">
+            <img src="images\ethereum-6278326_1280.webp" alt="Buy Ethereum" class="product-image"> 
+                <div class="product-info">
+                    <div class="product-name">Ethereum</div></a>
+                    <div class="product-price">$200</div>
+            </div>
+        </div>
+
+    </div>           
+    </body>
+</html>

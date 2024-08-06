@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitCoin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between; 
+                position: fixed; 
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color:orange; 
+                padding: 10px 20px; 
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+                z-index: 1000;
+        }
+        .header img {
+                height: 40px; 
+        }
+        .company-name {
+                flex: 1;
+                text-align: center;
+                font-size: 24px; 
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-image img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .product-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .details {
+            flex: 2;
+            margin-right: 20px;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .description {
+            margin: 20px 0;
+        }
+        .buy-now {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+        .buy-now:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <img src="images\menu option.png" alt="Options"> 
+        <a href="HTML.html"><img src="images\Abyss LOGO.jpg"></a>
+        <img src="images\pngwing.com.png" alt="Search">
+    </header>
+
+    <div style="padding-top: 60px;">
+
+    <div class="container">
+        <h1>BitCoin</h1>
+        <div class="product-details">
+            <div class="product-image">
+                <img src="images\61Iw4aixZ1L.jpg" alt="BitCoin">
+            </div>
+            <div class="details">
+                <div class="price">$3000</div>
+                <div class="description">
+                    <h2>Product Description</h2>
+                    <pre>                Bitcoin is a decentralized digital currency introduced in 2009 by an anonymous entity known as 
+                Satoshi Nakamoto.As the first and most well-known cryptocurrency, Bitcoin operates on a 
+                peer-to-peer network, allowing users to make transactions without the need for intermediaries 
+                like banks. Transactions are verified by network nodes through cryptography and recorded in a 
+                public ledger called the blockchain. This decentralized approach ensures transparency and 
+                security, reducing the risk of fraud and manipulation.
+
+                Bitcoin's supply is capped at 21 million coins, which introduces scarcity and contributes to 
+                its value proposition. Mining, the process of validating transactions and securing the network, 
+                involves solving complex mathematical problems and is rewarded with new bitcoins. This mechanism 
+                not only facilitates transaction processing but also introduces new bitcoins into circulation at 
+                a controlled rate.
+                        
+                Over the years, Bitcoin has gained significant traction as both a digital asset and a store of 
+                value, often referred to as "digital gold." Its adoption by individuals, businesses, and 
+                institutional investors has sparked widespread interest, influencing the broader cryptocurrency 
+                market and inspiring numerous alternative digital currencies. Bitcoin's decentralized nature and 
+                limited supply continue to drive discussions about its potential as a transformative financial 
+                technology.</pre>
+                </div>
+                <a href="PaymentPageBitCoin.html" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
